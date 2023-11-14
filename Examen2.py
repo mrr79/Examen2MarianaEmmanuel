@@ -25,6 +25,10 @@ class MiClase:
         if any(song is None for song in lista):
             return False
         return True
+
+    def Encuentra(self, lista, elemento):
+        return elemento in lista
+        
 ################################################################################################
 #Ejemplo de ejecución
 # Crear un objeto de la clase MiClase
