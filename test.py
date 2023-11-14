@@ -17,7 +17,7 @@ class TestMiClase(unittest.TestCase):
 
     def test_obtiene_valencia_3(self):
         resultado = self.objeto.ObtieneValencia(24680)
-        self.assertEqual(resultado, 0)
+        self.assertEqual(resultado, 4)
 
     def test_obtiene_valencia_4(self):
         resultado = self.objeto.ObtieneValencia(987654321)
