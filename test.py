@@ -85,12 +85,20 @@ class TestMiClase(unittest.TestCase):
     def test_verifica_lista_canciones_4(self):
         resultado = self.objeto.VerificaListaCanciones([None, None, None])
         self.assertFalse(resultado)
-
+    
 
     def test_verifica_lista_canciones_6(self):
         # Prueba con tempo par
         resultado = self.objeto.VerificaListaCanciones(["Canción 1", "Canción 2", "Canción 3"])
         self.assertTrue(resultado)
+
+    def test_encuentra_elemento_en_lista_1(self):
+        lista_numeros = [1, 2, 3, 4, 5]
+        elemento_a_buscar = 3
+        resultado = self.objeto.Encuentra(lista_numeros, elemento_a_buscar)
+        self.assertTrue(resultado)
+
+
 
 if __name__ == '__main__':
     unittest.main()
